@@ -1,0 +1,66 @@
+.footer{
+    margin-top: auto;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: var(--footerTextColor);
+    background-color: var(--thirdColor);
+    padding: 29px 0;
+    
+    @media screen and (max-width: 767px) {
+        max-height: 100px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+.footer-desc{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left-item {
+    display: flex;
+    gap: 10px;
+}
+
+.students-link{
+    cursor: pointer;
+    color: var(--footerTextColor);
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        color: var(--cardText); 
+    }
+}
+
+.icon-heart{
+    fill: var(--cardText);
+    animation-name: changeColor;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        fill: var(--cardTextOpac);
+    }
+  
+    50% {
+        fill: var(--cardText);
+    }
+  
+    100% {
+        fill: var(--cardTextOpac);
+    }
+}
+  

@@ -1,0 +1,143 @@
+<header class="header">
+    <!-- news row -->
+    <div class="news-wrapper">
+        <p class="news">Слава Україні!!!</p>
+    </div>
+
+    <!-- container w/image -->
+    <div class="header-bg">
+        <div class="container">
+            <!-- navigation -->
+            <nav class="nav">
+                <a class="logo" href="/src/index.html" aria-label="logo filmoteka">
+                    <svg class="logo-icon" width="32" height="32">
+                        <use href="/src/images/icons/icons.svg#icon-film"></use>
+                    </svg>             
+                    <p class="logo-name">Filmoteka</p>
+                </a>
+
+                <ul class="nav-list">
+                    <li class="nav-item nav-item--active">
+                        <a class="nav-link" href="/src/index.html" data-text="homeLink" aria-label="button home">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="/src/partials/library-pg.html"
+                            data-text="myLibraryLink" aria-label="button my library">my library</a>
+                    </li>
+
+                    <!-- authorization -->
+                    <li class="nav-item nav-item--button">
+                        <button class="login-btn" data-text="login" aria-label="authorization">login</button>
+                    </li>
+
+                    <!-- switcher lang -->
+                    <li class="nav-item nav-item--checkbox">
+                        <input id="lang" type="checkbox" class="translate" value="eng" />
+                        <label
+                            for="lang"
+                            class="translate-label eng nav-link"
+                            data-text="chengeLang"
+                            >en</label>
+                        <label for="lang" class="ua nav-link" data-text="chengeLang"
+                            >ua</label>
+                    </li>
+
+                    <!-- switcher color theme -->
+                    <li class="nav-item color--switcher">
+                        <div class="color--select">
+                            <input type="checkbox" id="darkmode-toggle" class="color--input" value="ligth" />
+                            <label for="darkmode-toggle" class="color--label">
+                                <svg class="sun">
+                                    <use href="/src/images/icons/icons.svg#icon-sun"></use>
+                                </svg>
+                        
+                                <svg class="moon">
+                                    <use href="/src/images/icons/icons.svg#icon-moon"></use>
+                                </svg>
+                            </label>
+                        
+                            <div class="background"></div>
+                        </div>
+                    </li>
+                </ul>               
+            </nav>           
+
+            <!-- search form -->
+            <form class="search-form">
+                <label>
+                    <input
+                    class="search-form__input"
+                    type="text"
+                    placeholder="movie search"
+                    />
+                </label>
+
+                <button class="search-btn" type="submit" aria-label="button search">
+                    <svg class="search-btn__icon" width="32" height="32">
+                        <use href="/src/images/icons/icons.svg#icon-search"></use>
+                    </svg>
+                </button>
+
+                <p class="search-form__error hidden" data-text="searchForm">Sorry, there are no films matching your search query. Please, try again.</p>
+            </form>
+
+
+            <!-- filters for content -->
+            <form id="filter-form">
+            <ul class="filters">
+                <li class="filters__list">
+                    <select id="genre-filter" class="filters__item">
+                    <option value="" selected data-text="allGenres" >All Genres</option>
+                    <option value='28' data-text="action">Action</option>
+                    <option value='12' data-text="adventure">Adventure</option>
+                    <option value='35' data-text="comedy">Comedy</option>
+                    <option value='80' data-text="crime">Crime</option>
+                    <option value='99' data-text="documentary">Documentary</option>
+                    <option value='18' data-text="drama">Drama</option>
+                    <option value='10751' data-text="family">Family</option>
+                    <option value='14' data-text="fantasy">Fantasy</option>
+                    <option value='36' data-text="history">History</option>
+                    <option value='27' data-text="horror">Horror</option>
+                    <option value='10402' data-text="music">Music</option>
+                    <option value='9648' data-text="mystery">Mystery</option>
+                    <option value='878' data-text="scienceFiction">Science Fiction</option>
+                    <option value='10770' data-text="tvMovie">TV Movie</option>
+                    <option value='53' data-text="thriller">Thriller</option>
+                    <option value='10752' data-text="war">War</option>
+                    <option value='37' data-text="western">Western</option>
+                    </select>
+                </li>
+                <li class="filters__list">
+                <select id="rating-filter" class="filters__item">
+                    <option value="" selected data-text="ratingFilter">Rating</option>
+                    <option value="10">10</option>
+                    <option value="9">9+</option>
+                    <option value="8">8+</option>
+                    <option value="7">7+</option>
+                    <option value="6">6+</option>
+                    <option value="5">5+</option>
+                    <option value="4">4+</option>
+                    <option value="3">3+</option>
+                    <option value="2">2+</option>
+                    <option value="1">1+</option>
+                </select>
+                </li>
+                <li class="filters__list">
+                <select id="date-filter" class="filters__item"></select>
+                </li>
+            </ul>
+            </form>
+
+            <!-- modal window for search offer -->
+            <div class="modal-offer">
+                <ul class="input-offer__list">
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <include src="./partials/slider.html"></include>
+</header>

@@ -1,0 +1,27 @@
+@import './utils/vars';
+@import './utils/mixins';
+@import './common';
+@import './utils/reset';
+@import './container';
+@import './table-list';
+@import './utils/visually-hidden';
+@import './utils/no-scroll';
+
+@import './components/header-main-pg';
+@import './components/news.scss';
+@import './components/filter';
+@import './components/slider';
+@import './components/header-library-pg';
+@import './components/film-cards';
+@import './components/footer';
+@import './components/pagination-nav';
+
+@import './components/modal-film';
+@import './components/modal-team';
+@import './components/header-main-modal';
+
+@import './utils/color-select';
+@import './utils/scroll-up';
+@import './utils/translate.scss';
+
+

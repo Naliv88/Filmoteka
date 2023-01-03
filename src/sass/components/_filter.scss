@@ -1,0 +1,23 @@
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+    @media screen and(min-width: 768px) {
+        gap: 20px;
+    }
+}
+
+.filters__item {
+    background-color: var(--filterColor);
+    color: var(--mainWhiteColorFooter);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+        box-shadow: var(--boxShadowHeader1) 0px 54px 55px, var(--boxShadowHeader2) 0px -12px 30px, var(--boxShadowHeader2) 0px 4px 6px, var(--boxShadowHeader3) 0px 12px 13px, var(--boxShadowHeader4) 15px -15px 15px;
+    }
+}
